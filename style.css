@@ -68,8 +68,6 @@
     transform: rotate(360deg);
   }
 }
-
-/* Mobile Image Size */
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 100px;
