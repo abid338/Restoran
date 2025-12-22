@@ -96,6 +96,128 @@
   color: #f39c12;
 }
 
+/* Ambiance Section */
+.ambiance-feature {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ambiance-feature:hover {
+  transform: translateY(-5px);
+}
+
+.ambiance-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ambiance-gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.ambiance-gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ambiance-gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Food Quality Section */
+.quality-highlights {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #f39c12;
+}
+
+.food-quality-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.food-quality-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.food-quality-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.food-quality-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Chef and Staff Section */
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card-img {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.team-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-card-img img {
+  transform: scale(1.1);
+}
+
+.team-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.team-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a1f2e;
+}
+
+.team-card-role {
+  color: #f39c12;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.team-card-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 /* Footer */
 .footer-custom {
   background-color: #1a2332;
@@ -115,4 +237,16 @@
   width: 40px;
   height: 40px;
   border-color: #ffa500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ambiance-gallery-item img,
+  .food-quality-item img {
+    height: 180px;
+  }
+  
+  .team-card-img {
+    height: 250px;
+  }
 }
